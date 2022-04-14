@@ -35,7 +35,7 @@ namespace Company.Function
             }
             else
             {
-                return new BadRequestObjectResult(@"userId is required as a query parameter");
+                return new BadRequestObjectResult(@"userId is required as a query parameter");             
             }
         }
     }

@@ -26,7 +26,7 @@ namespace Company.Function
             {                 
                 return new OkObjectResult(rating);            
             }
-            //Bilal is ironman     
+            //Bilal is ironman             
         }
     }
 }
