@@ -21,11 +21,12 @@ namespace Company.Function
             if (rating == null)
             {
                 return new NotFoundResult();
-            }
+            }                                 
             else
             {
                 return new OkObjectResult(rating);            
             }
+                     
         }
     }
 }
