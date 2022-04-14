@@ -25,8 +25,7 @@ namespace Company.Function
             else
             {                 
                 return new OkObjectResult(rating);            
-            }
-            //Bilal is ironman             
+            }           
         }
     }
 }
