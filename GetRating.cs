@@ -13,7 +13,8 @@ namespace Company.Function
         [FunctionName("GetRating")]
         public static IActionResult Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = "ratings/{id}")] HttpRequest req,
-            [CosmosDB("ratingsdb", "ratingscontainer", ConnectionStringSetting = "RatingsDatabase", SqlQuery = "Select * from ratings r where r.id = {id}")]IEnumerable<RatingModel> rating,
+            [CosmosDB(databaseName: "ratingsdb", collectionName: "ratingscontainer", ConnectionStringSetting = "RatingsDatabase", 
+            SqlQuery = "Select * from ratings r where r.id = {id}")]IEnumerable<RatingModel> rating,
             ILogger log)
         {
             log.LogInformation("Getting Rating");
